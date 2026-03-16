@@ -2,7 +2,7 @@ import react from "react";
 const Light=({color,Activity,onclick})=>{
 
     return (
-<div>
+<div className="light-bulb">
       onClick={onClick}
       style={{
         width: "80px",

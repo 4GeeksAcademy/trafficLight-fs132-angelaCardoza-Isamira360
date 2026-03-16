@@ -9,3 +9,15 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+
+.body-trafficLight{
+
+    background: "black";
+    width: "120px";
+    padding: "20px";
+    border-radius: "10px";
+    margin: "auto";
+
+}

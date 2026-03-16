@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Light from "./Light";
+
 
 
 const TrafficLight = () => {
@@ -12,32 +14,12 @@ const TrafficLight = () => {
                 : light === "green"
                     ? "yellow"
                     : "red"
-
-
-
-
         )
-
-
     }
-
-
-
-
-
-
 
 return (
 
- <div
-      style={{
-        background: "black",
-        width: "120px",
-        padding: "20px",
-        borderRadius: "10px",
-        margin: "auto"
-      }}
-    >
+ <div className="Body-trafficLight" >
       <Light color="red" isActive={light === "red"} onClick={changeLight} />
       <Light color="yellow" isActive={light === "yellow"} onClick={changeLight} />
       <Light color="green" isActive={light === "green"} onClick={changeLight} />
@@ -46,3 +28,5 @@ return (
 
 )
 }
+
+export default TrafficLight;
