@@ -1,24 +1,23 @@
 import react from "react";
-const Light=({color,Activity,onclick})=>{
 
-    return (
-<div className="light-bulb">
+
+const Light = ({ color, isActive, onClick }) => {
+  return (
+    <div
       onClick={onClick}
       style={{
+
         width: "80px",
         height: "80px",
         borderRadius: "50%",
-        margin: "10px",
+        margin: "auto 0",
         backgroundColor: color,
         opacity: isActive ? 1 : 0.3,
         cursor: "pointer"
+        
       }}
-
-</div>
-
-
-    )
-
-}
+    ></div>
+  );
+};
 
 export default Light;
